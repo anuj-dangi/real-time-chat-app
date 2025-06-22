@@ -46,7 +46,7 @@ export const useAuthStore = create((set) => ({
             set({ isSigningUp: false });
         }
     },
-
+    //logout from frontend side
     logout: async() => {
         try
         {
