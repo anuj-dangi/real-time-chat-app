@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuthStore } from '../store/useAuthStore.js';
+import { MessageSquare, User } from "lucide-react";
 
 const SignUpPage = () => {
 
@@ -32,7 +33,7 @@ const SignUpPage = () => {
               <p className='text-base-content/60'>Get started with your free acount</p>
             </div>
           </div>
-          <form onSubmit={handleSubmit()} className='space-y-6'>
+          <form onSubmit={handleSubmit} className='space-y-6'>
           <div className='form-control'>
             <label className='label'>
               <span className='label-text font-medium'>Full Name</span>
@@ -46,9 +47,8 @@ const SignUpPage = () => {
               className={'input input-bordered w-full pl-10'}
               placeholder='John Doe'
               value={formData.fullName}
-              onChange={(e) => setFormData({...formData, fullName: e.target.value})}>
-              
-              </input>
+              onChange={(e) => setFormData({ ...formData, fullName: e.target.value})}
+              />
             </div>
           </div>
           </form>
