@@ -17,7 +17,7 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    login(FormData);
+    login(formData);
   };
 
   return (
