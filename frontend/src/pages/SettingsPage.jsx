@@ -47,7 +47,7 @@ const SettingsPage = () => {
                 {/* Chat Header */}
                 <div className='px-4 py-3 border-base-300 bg-base-100'>
                   <div className='flex items-center gap-3'>
-                    <div className='size-8 rounded-full bg-primary flex items-center justify-center text-primary-content text-primary-content font-medium'>
+                    <div className='size-8 rounded-full bg-primary flex items-center justify-center text-primary-content font-medium'>
                       J
                     </div>
                   </div>
