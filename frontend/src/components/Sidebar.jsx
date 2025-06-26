@@ -5,7 +5,7 @@ import SidebarSkeleton from './skeletons/SidebarSkeleton.jsx';
 import { Users } from "lucide-react";
 const Sidebar = () => {
 
-  const { getUsers, users, selectedUser, SetSelectedUser, isUsersLoading } = useChatStore();
+  const { getUsers, users, selectedUser, setSelectedUser, isUsersLoading } = useChatStore();
 
   const onlineUsers = []; 
 
@@ -28,7 +28,7 @@ const Sidebar = () => {
         {users.map((user) => (
           <button
             key={user._id}
-            onClick={() => SetSelectedUser(user)}
+            onClick={() => setSelectedUser(user)}
             className={`
               w-full p-3 flex items-center gap-3
               hover:bg-base-300 transition-colors
