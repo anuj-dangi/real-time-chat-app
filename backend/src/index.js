@@ -25,7 +25,7 @@ app.use(cors({
 
 //authorization routes -> signup, login, logout
 app.use("/api/auth", authRoutes);
-app.use("/api/message", messageRoutes)
+app.use("/api/messages", messageRoutes)
 
 //listening on port 
 app.listen(PORT, () => {
