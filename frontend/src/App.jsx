@@ -9,7 +9,6 @@ import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/ProfilePage";
 
-import { axiosInstance } from "./lib/axios.js";
 import { useAuthStore } from './store/useAuthStore.js';
 import { useThemeStore } from './store/useThemeStore.js';
 
@@ -25,8 +24,6 @@ const App = () => {
   useEffect( () => {
     checkAuth()
   }, [checkAuth]);
-
-  console.log({authUser});
 
   if(isCheckingAuth && !authUser) return (
 
