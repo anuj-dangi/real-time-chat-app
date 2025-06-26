@@ -9,7 +9,7 @@ export const useChatStore = create((set) => ({
     isUsersLoading: false,
     isMessageLoading: false,
 
-    getUser: async() => {
+    getUsers: async() => {
         set({ isUsersLoading: true});
 
         try
