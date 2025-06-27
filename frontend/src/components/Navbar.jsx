@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className='size-9 rounded-lg bg-primary/10 flex items-center justify-center'>
               <MessageSquare className="size-5 text-primary" />
             </div>
-            <h1 className='text-lg font-bold'>UnderGround Talks</h1>
+            <h1 className='text-lg font-bold'>Sanvada Data</h1>
           </Link>
         </div>
           
